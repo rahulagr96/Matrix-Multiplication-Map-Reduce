@@ -12,12 +12,12 @@ for input_line in sys.stdin:
 
     if this_key == 'A':
         a[(int(v[1]), int(v[2]))] = int(v[3])
-        a_row = max(int(v[1]) + 1, a_row)
-        a_col = max(int(v[2]) + 1, a_col)
+        a_row = int(v[1]) + 1
+        a_col = int(v[2]) + 1
     elif this_key == 'B':
         b[(int(v[1]), int(v[2]))] = int(v[3])
-        b_row = max(int(v[1]) + 1, b_row)
-        b_col = max(int(v[2]) + 1, b_col)
+        b_row = int(v[1]) + 1
+        b_col = int(v[2]) + 1
 
 result = 0
 if a_col == b_row:
