@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 import sys
-input_file = open("input.txt").readlines()
-for line in input_file:
+for line in sys.stdin:
     line = line.strip()
     entry = line.split(",")
     key = entry[0]
